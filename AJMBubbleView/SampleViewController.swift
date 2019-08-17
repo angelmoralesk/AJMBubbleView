@@ -8,18 +8,18 @@
 
 import UIKit
 
-class SampleViewController: UIViewController {
+final class SampleViewController: UIViewController {
 
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var actionButton: NSLayoutConstraint!
-    var counter = 0
-    var bubbleVC : AJMBubbleViewController?
+    @IBOutlet private weak var titleLabel: UILabel!
+    @IBOutlet private weak var actionButton: NSLayoutConstraint!
+    private var counter = 0
+    private var bubbleVC : AJMBubbleViewController?
     
     override func viewDidLoad() {
         super.viewDidLoad()  
     }
 
-    @IBAction func updateLabel(_ sender: Any) {
+    @IBAction private func updateLabel(_ sender: Any) {
         titleLabel.text = "\(counter)"
         counter = counter + 1
        
@@ -42,7 +42,7 @@ class SampleViewController: UIViewController {
 
     }
     
-    @IBAction func createNotification(_ sender: Any) {
+    @IBAction private func createNotification(_ sender: Any) {
         self.bubbleVC?.reloadBubble()
     }
 }
