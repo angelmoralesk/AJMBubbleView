@@ -33,6 +33,7 @@ enum AnchorPoint {
         }
     }
 }
+//  ESTO SOLO ES UN EJERCICIO DE CODIGO COMENTADO PARA HACER UN PULL REQUESTS
 
 class AJMBubbleViewController: UIViewController {
     
